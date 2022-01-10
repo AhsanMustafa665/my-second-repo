@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            width: 700px;
+            border-bottom: 2px solid darkgray;
+            white-space: nowrap;
+            text-align: center;
+        }
+
+        img {
+            width: 300px;
+
+        }
+
+        .feild {
+            width: 1200px;
+            height: 445px;
+            background-image: url(showoff/download.jfif);
+            border: 2px solid green;
+        }
+
+        .feild:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: right top;
+        }
+
+        .ball {
+            width: 70px;
+            height: 70px;
+            border-radius: 35px;
+            background-color: brown;
+            position: relative;
+            bottom: 93px;
+            left: 571px;
+            transition: transform 1s ease-out 0.3s;
+        }
+
+        .feild:hover .ball {
+            transform: translate(500px, -500px);
+        }
+
+        .bat {
+            transition: transform 0.3s ease-in;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This site is CSS animation funny Bat-ball :)</h1>
+    <div class="feild">
+        <img class="bat" src="showOff/32651-1-cricket-bat.png" alt="">
+        <div class="ball"></div>
+    </div>
+
+</body>
+
+</html>
